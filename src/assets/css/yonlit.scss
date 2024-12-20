@@ -1,0 +1,288 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+.responsive-tableyonlit {
+    width: 100%;
+    table-layout: fixed;
+  } 
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1600px
+);
+
+.buttonYonlit {
+    align-items: center;
+    background-color: #6ba09e;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    color: #fffdfd;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border-radius: 10px;
+
+}
+
+.buttonYonlit:focus {
+    color: #171e29;
+}
+
+.buttonYonlit:hover {
+    border: 4px solid;
+    border-color: rgb(2, 49, 177);
+    color: rgb(7, 48, 110);
+    fill: rgb(7, 48, 110);
+}
+
+.buttonYonlit:active {
+    border: 4px solid;
+    border-color: rgb(2, 49, 177);
+    color: rgb(7, 48, 110);
+    fill: rgb(7, 48, 110);
+}
+
+@media (min-width: 768px) {
+    .buttonYonlit {
+        min-width: 100px;
+    }
+}
+
+/* @media (min-width: xs) and (max-width: sm) {
+        .buttonYonlit {
+            min-width: 40px;
+          
+       }} */
+
+.yonlit {
+    align-items: center;
+    background-color: #9e8912;
+    border: 2px solid white;
+    border-radius: 5px !important;
+    box-sizing: border-box;
+    color: #fffdfd;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    min-width: 100px;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    /* border-radius: 10px; */
+    margin-right: 1vw;
+    margin-left: 1vw
+}
+
+//BOTON DESABILITADO yonlit
+.buttonDesabilitadoYonlit {
+    align-items: center;
+    background-color: #054579;
+    /*   border: 1px solid #020202; */
+    box-sizing: border-box;
+    color: #f7f4f4;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    /* text-decoration: none; */
+    user-select: none;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .buttonDesabilitadoYonlit {
+        min-width: 170px;
+    }
+}
+
+//SCROLL
+/* @include media-breakpoint-up(md){
+    .scrolldiv{
+       max-height: 100%;  
+        overflow-y: auto;
+    }
+    .scroll{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color:#d5d5d0 ;
+    }
+} */
+
+/* @include media-breakpoint-between(sm,md){
+    .scrolldiv{
+       max-height: 50px; 
+        overflow-y: scroll;
+    }
+    .scroll{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color:#d5d5d0 ;
+    }
+}  */ 
+
+
+
+@include media-breakpoint-between(xs,md){
+ 
+    .marginTopCelularYonlit {
+      margin-top: 5vw;
+    }
+      .columnasYonlit {
+        font-size: 11px;
+        /* white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        border: 1px solid white;
+        padding: 1px
+      }
+  
+      .columnasFilaYonlit {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+      .tamanoDeLetraContenidoYonlit{
+        font-size: 15px;
+      }
+      .tamanoDeLetraFechaYonlit{
+        font-size: 10px;
+      }
+  
+      .tamanoDeLetraColumnasYonlit{
+        font-size: 10px;
+      }
+      .tamanoDivYonlit{
+        height: 10vw;
+      }
+  
+  }
+  
+  @include media-breakpoint-between(md,lg){
+    .tamanoCuadroYonlit {
+      width:100vw;
+      margin-left: -90vw;
+      margin-right: 1vw;
+      margin-top: 4vw;
+    }
+    .columnasYonlit {
+      font-size: 9px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0px
+    }
+    .columnasFilaYonlit {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    .tamanoDeLetraContenidoYonlit{
+      font-size: 9px;
+    }
+    .tamanoDeLetraFechaYonlit{
+      font-size: 6px;
+    }
+    .tamanoDivYonlit{
+      height: 5vw;
+    }
+  }
+  
+  @include media-breakpoint-between(lg,xxl){
+    
+      .tamanoCuadroYonlit {
+        width:100vw;
+        margin-left: -90vw;
+        margin-right: 1vw;
+        margin-top: 4vw;
+      }
+      .columnasYonlit {
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 1px
+      }
+      .columnasFilaYonlit {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+      .tamanoDeLetraContenidoYonlit{
+        font-size: 15px;
+      }
+      .tamanoDeLetraFechaYonlit{
+        font-size: 15px;
+      }
+      .tamanoDivYonlit{
+        height: 5vw;
+      }
+  }
+  
+  @include media-breakpoint-up(xxl){
+    
+    .tamanoCuadroYonlit {
+      width:100vw;
+      margin-left: -90vw;
+      margin-right: 1vw;
+      margin-top: 4vw;
+    }
+    .columnasYonlit {
+      font-size: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 1px
+    }
+    .columnasFilaYonlit {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    .tamanoDeLetraContenidoYonlit{
+      font-size: 19px;
+    }
+    .tamanoDeLetraFechaYonlit{
+      font-size: 16px;
+    }
+    .tamanoDivYonlit{
+      height: 5vw;
+    }
+  }
+

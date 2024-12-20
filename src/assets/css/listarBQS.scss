@@ -1,0 +1,71 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@font-face {
+  font-family: 'RobotMono1';
+  src: url('../fonts/Roboto_Mono/static/RobotoMono-Bold.ttf')
+}
+
+
+
+
+
+/* .pagina-especificaLogin{
+    background-image: url("../imagenes/fondo2.png");
+    background-size: cover;
+
+} */
+.responsive-table1 {
+  width: 100%;
+  table-layout: fixed;
+
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  mdd:800px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+
+@include media-breakpoint-between(xs, md) {
+
+  .tamanoListarBQ{
+    width: 100vw;
+    
+  }
+}
+
+@include media-breakpoint-between(md, mdd) {
+
+  .tamanoListarBQ{
+    width: 100vw;
+  }
+}
+
+@include media-breakpoint-between(mdd, lg) {
+
+  .tamanoListarBQ{
+    width: 21vw;
+  }
+}
+
+@include media-breakpoint-between(lg, xxl) {
+
+  .tamanoListarBQ{
+    width: 21vw;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .tamanoListarBQ{
+    width: 21vw;
+  }
+}
+
+
+  

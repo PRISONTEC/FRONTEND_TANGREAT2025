@@ -1,0 +1,140 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+.containerBloqueador {
+    display: grid;
+    grid-template-areas: "head head"
+        "section section"
+        "menuTotal menuTotal"
+        "mostrarGrafica mostrarGrafica";
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 0vh 6vh 72.2vh;
+    height: 91vh; 
+    width: 99vw;
+    margin: 5px 0px 5px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 10px solid #272F53;
+    /* background-color: white; */
+    border-radius: 10px;
+    /* background-color: rgb(247, 242, 242); */
+
+}
+
+.containerHeader {
+    grid-area: head;
+    display: flex;
+    
+}
+
+.header1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 8vh;
+    margin: 5px 0px 0px 0px;
+    /* background: yellow; */
+    
+}
+
+.section{
+    grid-area: section;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin-top: -5vh; */
+    /* background: rgb(50, 89, 112); */
+    
+}
+
+.menu{
+    grid-area: menuTotal;
+    background: rgb(21, 85, 110); 
+    height: 6vh;
+    padding: 0px 5px 0px 5px;
+    
+    /* margin-top: -13vh; */
+}
+.menuHijo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.mostrarDatos{
+    grid-area: mostrarData;
+    background: rgb(130, 131, 130); 
+}
+
+
+.mostrardataGrafico{
+    grid-area: mostrarGrafica;
+    background: rgb(255, 255, 255);
+
+}
+.mostrardataUltimoEstado{
+    grid-area: mostrardataUltimoEstado1;
+    background: rgb(255, 255, 255);
+
+}
+
+//bloqueador
+.bloqueador{
+    border: 2px solid #0D6EFD;
+    border-radius: 5px;
+    background:#0D6EFD ;
+    color: white;
+}
+.bloqueador label{
+    margin: 5px;
+}
+.bloqueador select{
+    background: white;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+
+.bloqueador .botonTraer{
+    background: #0D6EFD;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+
+.bloqueadorTraerDatos{
+    background: #fcfdfd;
+    border: 3px solid #0D6EFD;
+    border-radius: 4px;
+}
+
+.botonCabecera2{
+    border: 2px solid #0D6EFD;
+    border-radius: 5px;
+    background:#0D6EFD ;
+    color: white;
+}
+
+.botonCabecera2:hover{
+    background: #3c7a76;
+    border: none;
+}
+
+//Ultimo estad
+.ultimoEstado{
+    display: flex;
+    flex-direction: row;
+}
+.tablaCabecera{
+    height: 100%;
+    background: red !important;
+}
+
+

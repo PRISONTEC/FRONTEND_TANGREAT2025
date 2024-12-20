@@ -1,0 +1,229 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+/* @include media-breakpoint-between(md, xl) { ... }
+
+@include media-breakpoint-up(sm) { ... } */
+
+
+/* ===========Colaboradores======== */
+.containerColaborador {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 8px 0px 10px;
+    height: 65vh;
+    /* width: 95vw; */
+    overflow-y: auto;
+
+
+    //!MODAL
+
+    .modalColaborador {
+        /* display: flex;
+        justify-content: center; */
+        align-self: center;
+        margin: 40px 0px 0px 0px;
+    }
+
+    //!TABLA
+    .tablaContainer {
+        margin-top: 1vh;
+        border-collapse: collapse;
+        flex-grow: 1;
+        overflow-x: auto;
+
+        .tablaColaborador {
+            text-align: center;
+            /* border: 1px solid #0D6EFD; */
+
+            .cabeceraTabla {
+                border-bottom: 1px solid #999999;
+                position: sticky;
+                top: 0;
+                z-index: 1;
+                /* Agregar borde inferior a las celdas de la cabecera */
+            }
+
+
+        }
+
+        .table.tablaColaborador {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .table.tablaColaborador th,
+        .table.tablaColaborador td {
+            border: 0px solid #202122;
+            padding: 0.75rem;
+            border-bottom: 1px solid #b4b4b4;
+        }
+        .bodyTablaColaborador th,
+        .bodyTablaColaborador td {
+            word-wrap: break-word;
+        overflow-wrap: break-word;
+        }
+
+
+        .tablaColaborador th:first-child,
+        .tablaColaborador td:first-child {
+            border-left: none;
+            /* Eliminar borde izquierdo de la primera columna */
+        }
+
+        .tablaColaborador th:last-child,
+        .tablaColaborador td:last-child {
+            border-right: none;
+            /* Eliminar borde derecho de la última columna */
+        }
+
+        .cabeceraTabla th:first-child,
+        .bodyTablaColaborador td:first-child {
+            border-left: none;
+            /* Eliminar borde izquierdo de la primera columna en la cabecera y cuerpo de la tabla */
+        }
+
+        .cabeceraTabla th:last-child,
+        .bodyTablaColaborador td:last-child {
+            border-right: none;
+            /* Eliminar borde derecho de la última columna en la cabecera y cuerpo de la tabla */
+        }
+
+        .imagenEliminarCol {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .cabeceraTabla th,
+        .cabeceraTabla td {
+            border: 0px solid #202122;
+            padding: 0.75rem;
+            border-bottom: 1px solid #b4b4b4;
+            white-space: wrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
+
+        //!FILTROS
+        .inputFiltros {
+            background: white;
+            border: 3px solid #0D6EFD;
+            background: #0D6EFD;
+            border-radius: 3px;
+            width: 10vw;
+            text-align: center;
+        }
+
+        .inputFiltros::placeholder {
+            color: white;
+        }
+
+        .inputFiltros:hover {
+            color: white;
+        }
+
+        .inputFiltros:focus::placeholder {
+            color: rgb(204, 200, 200);
+        }
+    }
+
+    //!PAGINACION
+
+    .paginacionColaborador {
+        align-self: flex-end;
+        height: 8vh;
+
+        /* border: 2px solid #0D6EFD; */
+        /* background: blue; */
+        .botonPaginacion {
+            width: 14vh;
+            background: #0D6EFD;
+            border: 2px solid rgb(255, 254, 254);
+            border-radius: 3px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .botonPaginacionCero {
+            width: 14vh;
+            background: #a1bfeb;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 3px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .botonPaginacionNumeroElejido {
+            width: 4vh;
+            background: #0D6EFD;
+            border: 2px solid rgb(255, 253, 253);
+            border-radius: 3px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .botonPaginacionNumero {
+            width: 4vh;
+            background: white;
+            border: 2px solid rgb(165, 160, 160);
+            border-radius: 3px;
+            color: black;
+            font-size: 20px;
+        }
+    }
+}
+
+//Modal tabla
+.modalTabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+//!SALDO TOTAL
+.saldoTotal {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    align-items: flex-end;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: #0D6EFD;
+    color: white;
+    text-align: center;
+    width: 13vw;
+    margin-bottom: 3vh;
+
+}
+
+
+
+//=================DEUDAS=============================//
+
+.containerDeudas {
+    display: flex;
+}
+
+.botonDeudasDetalle {
+    background: #0D6EFD;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+}
+
+.botonDeudasDetalle:hover {
+    background: #8b6807;
+}

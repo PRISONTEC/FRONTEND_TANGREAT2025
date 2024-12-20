@@ -1,0 +1,535 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@font-face {
+  font-family: 'RobotMono1';
+  src: url('../fonts/Roboto_Mono/static/RobotoMono-Bold.ttf')
+}
+
+
+
+
+
+/* .pagina-especificaLogin{
+    background-image: url("../imagenes/fondo2.png");
+    background-size: cover;
+
+} */
+.responsive-table1 {
+  width: 100%;
+  table-layout: fixed;
+
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  mdd:800px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+
+.menuConfiguracionTitulos {
+  font-family: 'RobotMono1';
+}
+
+
+
+@include media-breakpoint-between(xs, md) {
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 190px 9fr;
+    grid-row-gap: 10px;
+    grid-template-areas: 'header header'
+      'section section'
+      'aside aside';
+  }
+
+  .header {
+    grid-area: header;
+
+  }
+
+  .aside {
+    grid-area: aside;
+    
+  }
+
+  .section {
+    grid-area: section;
+    .sectionDiv {
+      background: #3C4364;
+      border-style: solid;
+      border-width: 5px;
+      border-color: white;
+      margin-top: 1vw;
+      border-radius: 10px;
+      height: 80vh;
+      overflow-y: scroll
+      
+    }
+
+  }
+
+
+  .marginTopCelular {
+    margin-top: 5vw;
+  }
+
+  .columnas {
+    font-size: 11px;
+    /* white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    border: 1px solid white;
+    padding: 1px
+  }
+
+  .columnasFila {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .tamanoDeLetraContenido {
+    font-size: 15px;
+  }
+
+  .tamanoDeLetraFecha {
+    font-size: 10px;
+  }
+
+  .tamanoDeLetraColumnas {
+    font-size: 10px;
+  }
+
+  .tamanoDiv {
+    height: 10vw;
+  }
+
+  .tamanoContenedorYonli {
+    width: 43vh;
+  }
+}
+
+@include media-breakpoint-between(md, mdd) {
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 190px 9fr;
+    grid-row-gap: 10px;
+    grid-template-areas: 'header header'
+      'section section'
+      'aside aside';
+  }
+
+  .header {
+    grid-area: header;
+
+  }
+
+  .aside {
+    grid-area: aside;
+  }
+
+  .section {
+    grid-area: section;
+
+    .sectionDiv {
+      background: #3C4364;
+      border-style: solid;
+      border-width: 5px;
+      border-color: white;
+      margin-top: 1vw;
+      border-radius: 10px;
+      height: 65vh;
+      overflow-y: scroll;
+      margin-bottom:40px ;
+    }
+
+  }
+
+
+  .marginTopCelular {
+    margin-top: 5vw;
+  }
+
+  .columnas {
+    font-size: 11px;
+    /* white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    border: 1px solid white;
+    padding: 1px
+  }
+
+  .columnasFila {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .tamanoDeLetraContenido {
+    font-size: 15px;
+  }
+
+  .tamanoDeLetraFecha {
+    font-size: 10px;
+  }
+
+  .tamanoDeLetraColumnas {
+    font-size: 10px;
+  }
+
+  .tamanoDiv {
+    height: 10vw;
+  }
+
+  .tamanoContenedorYonli {
+    width: 43vh;
+  }
+}
+
+@include media-breakpoint-between(mdd, lg) {
+  .grid-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 190px 9fr;
+    grid-template-areas: 'header header'
+      'aside section';
+  }
+
+  .header {
+    grid-area: header;
+
+  }
+
+  .aside {
+    grid-area: aside;
+  }
+
+  .section {
+    grid-area: section;
+
+    .sectionDiv {
+      background: #3C4364;
+      border-style: solid;
+      border-width: 5px;
+      border-color: white;
+      margin-top: 1vw;
+      border-radius: 10px;
+      height: 90vh;
+      overflow-y: scroll;
+      margin-bottom:40px ;
+    }
+
+  }
+
+  .tamanoCuadro {
+    width: 100vw;
+    margin-left: -90vw;
+    margin-right: 1vw;
+    margin-top: 4vw;
+  }
+
+  .columnas {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1px
+  }
+
+  .columnasFila {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .tamanoDeLetraContenido {
+    font-size: 16.5px;
+  }
+
+  .tamanoDeLetraFecha {
+    font-size: 12px;
+  }
+
+  .tamanoDiv {
+    height: 5vw;
+  }
+
+  .tamanoContenedorYonli {
+    width: 40vh;
+  }
+
+}
+
+@include media-breakpoint-between(lg, xxl) {
+  .grid-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 190px 9fr;
+    grid-template-areas: 'header header'
+      'aside section';
+  }
+
+  .header {
+    grid-area: header;
+
+  }
+
+  .aside {
+    grid-area: aside;
+  }
+
+  .section {
+    grid-area: section;
+
+    .sectionDiv {
+      background: #3C4364;
+      border-style: solid;
+      border-width: 5px;
+      border-color: white;
+      margin-top: 1vw;
+      border-radius: 10px;
+      height: 90vh;
+      overflow-y: auto;
+      margin-bottom:40px ;
+      
+    }
+
+  }
+
+  .tamanoCuadro {
+    
+    width: 100vw;
+    margin-left: -90vw;
+    margin-right: 1vw;
+    margin-top: 4vw;
+  }
+
+  .columnas {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1px
+  }
+
+  .columnasFila {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .tamanoDeLetraContenido {
+    font-size: 16.5px;
+  }
+
+  .tamanoDeLetraFecha {
+    font-size: 12px;
+  }
+
+  .tamanoDiv {
+    height: 5vw;
+  }
+
+  .tamanoContenedorYonli {
+    width: 40vh;
+  }
+
+}
+
+@include media-breakpoint-up(xxl) {
+
+  .grid-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 190px 9fr;
+    grid-template-areas: 'header header'
+      'aside section';
+  }
+
+  .header {
+    grid-area: header;
+
+  }
+
+  .aside {
+    grid-area: aside;
+  }
+
+  .section {
+    grid-area: section;
+
+    .sectionDiv {
+      background: #3C4364;
+      border-style: solid;
+      border-width: 5px;
+      border-color: white;
+      margin-top: 1vw;
+      border-radius: 10px;
+      height: 90vh;
+      overflow-y: auto
+    }
+
+  }
+
+  .tamanoCuadro {
+    width: 100vw;
+    margin-left: -90vw;
+    margin-right: 1vw;
+    margin-top: 4vw;
+  }
+
+  .columnas {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1px
+  }
+
+  .columnasFila {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .tamanoDeLetraContenido {
+    font-size: 19px;
+  }
+
+  .tamanoDeLetraFecha {
+    font-size: 16px;
+  }
+
+  .tamanoDiv {
+    height: 5vw;
+  }
+
+  .tamanoContenedorYonli {
+    width: 40vh;
+  }
+
+}
+
+/* @include media-breakpoint-between(md,lg){
+  .body{
+    background-color: "#a11414";
+  }
+  .escritorioEstiloDiv{
+    width: 20rem;
+    height: 20rem;
+    background-color: transparentize(#1b4b52, 0.2);
+    border: solid  2px #1b4b52;
+    border-radius: "20px";
+    margin: "10px"
+
+  }
+  .escritorioRemoto{
+    top: 4px;
+    position: relative;
+    h5{
+      font-size: 20px;
+    }
+  }
+  .escritorioImagenDiv1{
+    position: relative;
+    top: -10px
+  }
+  .escritorioImagenDiv2{
+    position: relative;
+    top: -10px
+  }
+  .imagenLoginIngresar{
+    width: 11rem;
+    height: 11rem
+  }
+  .escritorioBotonIngresar1{
+    position:relative; 
+    top: -30px;
+    button{
+      font-size: 15px;
+    }
+  }
+  .escritorioBotonIngresar2{
+    position:relative; 
+    top: -30px;
+    button{
+      font-size: 15px;
+    }
+  }
+
+}
+
+@include media-breakpoint-up(lg){
+  .body{
+    background-color: "#a11414";
+  }
+  .escritorioEstiloDiv{
+    width: 18rem;
+    height: 30rem;
+    background-color: transparentize(#1b4b52, 0.2);
+    border: solid  2px #1b4b52;
+    border-radius: "20px";
+    margin: "10px"
+
+  }
+  .escritorioRemoto{
+    top: 40px;
+    position: relative
+  }
+  .escritorioImagen{
+    position: relative;
+    top: 18px
+  }
+  .escritorioImagenDiv1{
+    position: relative;
+    top: 20px
+  }
+  .escritorioImagenDiv2{
+    position: relative;
+    top: -10px
+  }
+  .escritorioBotonIngresar1{
+    position:relative; 
+    top: 26px
+  }
+  .escritorioBotonIngresar2{
+    position:relative; 
+    top: 26px
+  }
+  .imagenLoginIngresar{
+    width: 15rem;
+    height: 15rem
+  }
+
+} */
+
+
+
+/*############MAQUTACION DE PAGINA WEB CSS GRID Y FLEXBOXS#################### */
+/* .grid-container{
+  display: grid;
+  grid-column-gap:10px;
+  grid-template-columns: 190px 9fr;
+  grid-template-areas: 'header header'
+    'aside section';
+}
+
+.header{
+  grid-area: header;
+
+}
+
+.aside{
+  grid-area: aside;
+}
+
+.section{
+  grid-area: section;
+} */
